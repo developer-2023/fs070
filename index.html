@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector specifity - medal classification - bronze</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        p {color: red;} /* (0,0,1) */
+        p span {color: blue;} /* (0,0,2) */
+        article p span {color: green;} /* (0,0,3) */
+        article > p span {color: silver;} /* (0,0,3) */
+    </style>
+</head>
+<body>
+    <article>
+        <p>Lorem <span>ipsum dolor</span> sit amet.</p>
+    </article>
+</body>
+</html>
